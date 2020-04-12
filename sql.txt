@@ -1,0 +1,5 @@
+SELECT g.id, g.gamename, g.sellday,
+'www.getchu.com/soft.phtml?id=' || g.comike as links
+FROM gamelist g
+WHERE g.comike is NOT NULL
+ORDER BY g.sellday
