@@ -9,5 +9,5 @@ illust2vec = i2v.make_i2v_with_chainer(
 #     "illust2vec_tag.prototxt", "illust2vec_tag_ver200.caffemodel",
 #     "tag_list.json")
 
-img = Image.open("images/1.jpg")
+img = Image.open("1.jpg")
 print(illust2vec.estimate_plausible_tags([img], threshold=0.25))

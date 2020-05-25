@@ -12,8 +12,10 @@ for line in f:
         pattern = re.compile(r'\./brandnew[\S]+chara[\S]+\.jpg')   # 查找image link
         result = pattern.findall(content)
         if result:
+            print('get links!')
             for link in result:
                 fo.write(link+'\n')
+                fo.flush()
     except:
         print('one pic error!')
 
